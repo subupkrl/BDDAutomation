@@ -9,4 +9,4 @@ def before_scenario(context, scenario):
 
 def after_scenario(context, scenario):
     # Close the browser after the scenario runs
-    context.driver.quit()
+    context.driver.close()

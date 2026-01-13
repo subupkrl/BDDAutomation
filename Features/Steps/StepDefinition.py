@@ -1,11 +1,9 @@
 from behave import *
-from selenium.webdriver import Chrome
 from behave.api.pending_step import StepNotImplementedError
 
 
 @given(u'User is on registration page')
 def step_imp(context):
-    context.driver = Chrome()
     context.driver.get("https://www.facebook.com/r.php")
     context.driver.maximize_window()
     
